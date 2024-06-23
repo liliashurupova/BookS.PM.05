@@ -1,0 +1,21 @@
+﻿<Window x:Class="BookS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookS"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="450*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Width="749">
+            <Image HorizontalAlignment="Left" Height="69" Margin="171,0,0,0" VerticalAlignment="Center" Width="72" Source="/лого1.png"/>
+        </StackPanel>
+        <TextBlock Margin="310,0,273,0" TextWrapping="Wrap" Text="Книжный магазин" VerticalAlignment="Center" FontSize="18" Width="217"/>
+        <Frame x:Name="FrmMain" Grid.Row="1" NavigationUIVisibility="Hidden">
+        </Frame>
+    </Grid>
+</Window>
